@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./components/navigation";
+import Banner from "./components/banner";
+import Content from "./components/content";
+import Playlist from "./components/playlist";
+import Features from "./components/features";
+import Footer from "./components/footer";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [animationComplete, setAnimationComplete] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimationComplete(true);
+    }, 5000);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation />
+      <Banner />
+      {animationComplete && (
+        <>
+          <Content />
+          <Playlist />
+          <Features />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
