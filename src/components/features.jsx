@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { respond } from "../style-config/mixin";
 
 const Container = styled.div`

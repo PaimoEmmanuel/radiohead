@@ -6,10 +6,9 @@ import MusicThree from "../assets/images/music-3.png";
 import MusicFour from "../assets/images/music-4.png";
 import MusicFive from "../assets/images/music-5.png";
 import MusicSix from "../assets/images/music-6.png";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
-import { useRef } from "react/cjs/react.development";
 
 const Container = styled.div`
   padding: 80px 200px;

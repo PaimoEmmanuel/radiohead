@@ -4,7 +4,7 @@ import scrollTrigger from "gsap/ScrollTrigger";
 import { respond } from "../style-config/mixin";
 import PlaylistOne from "../assets/images/playlist-1.png";
 import PlaylistTwo from "../assets/images/playlist-2.png";
-import { useEffect, useRef } from "react/cjs/react.development";
+import { useEffect, useRef } from "react";
 
 const Container = styled.div`
   padding: 80px 200px;
